@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-1240" y="-80" width="1440" height="1100" clip-rule="evenodd"/>
+		</clipPath>
+		<linearGradient id="gradient_0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="64" y2="64">
+			<stop offset="0" stop-color="rgb(255,151,79)"/>
+			<stop offset="1" stop-color="rgb(227,44,117)"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="url(#gradient_0)" stroke="none" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z"/>
+	</g>
+
+</svg>
