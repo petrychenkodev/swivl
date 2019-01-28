@@ -1,0 +1,230 @@
+.container{
+	max-width: 1440px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	padding: 0 130px;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	box-shadow:  0px 3px 15px -2px rgba(0,0,0,0.75);
+	.navLeft{
+		.logo{
+			color: #3e3f58;
+			  font-family: "Open Sans";
+			  font-size: 16px;
+			  font-weight: 400;
+			  padding: 25px 0;
+		}
+		.list{
+			display: flex;
+			justify-content: space-between;
+			width: 260px;
+			.list__item{
+				color: #3e4056;
+				font-family: "Open Sans";
+				font-size: 14px;
+				transition: .2s;
+				padding-bottom: 25px;
+				box-sizing: border-box;
+			}
+			.list__item:hover{
+				color: #000;
+				border-bottom: 2px solid #FF974F;
+				transition: .2s;
+			}
+		}
+	}
+	.navRight{
+		position: relative;
+		.list{
+			display: flex;
+			justify-content: space-between;
+			width: 290px;
+			align-items: baseline;
+			font-family: "Open Sans";
+  			font-size: 16px;
+  			padding-top: 20px;
+  			a{
+  				cursor: pointer;
+  			}
+		}
+		.oval{
+			position: absolute;
+			width: 64px;
+			height: 64px;
+			right: -6px;
+    		bottom: -32px;
+			span{
+				font-size: 38px;
+			    color: #fff;
+			    position: absolute;
+			    top: calc(50% - 19px);
+			    left: calc(50% - 11px);
+			}
+		}
+	}
+}
+
+.main{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+	background-color: #f7f9fc;
+	.profile{
+		width: 350px;
+		height: 262px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
+		margin-right: 60px;
+		.profile__photo{
+			width:120px;
+			height:120px;
+		}
+		.profile__info{
+			width: 145px;
+			.name{
+				color: #3e3f58;
+				  font-family: Montserrat;
+				  font-size: 24px;
+				  font-style: normal;
+				  font-stretch: normal;
+				  font-weight: 400;
+				  line-height: 26px;
+				  letter-spacing: 0px;
+				  display:block;
+				  margin-bottom:15px;
+			}
+			.nick{
+				  font-family: "Open Sans";
+				  font-size: 16px;
+				  font-style: normal;
+				  font-stretch: normal;
+				  font-weight: 400;
+				  line-height: 22px;
+				  display:block;
+				  margin-bottom:15px;
+			}
+			.edit{
+				 color: #F05D63;
+				  font-family: "Open Sans";
+				  font-size: 16px;
+				  font-style: normal;
+				  font-stretch: normal;
+				  font-weight: 400;
+				  img{
+				  	margin-right:5px;
+				  }
+			}
+		}
+		.vertical__dots{
+			width:16px;
+			height:16px;
+		}
+		.profile__subsc{
+			margin-top:30px;
+			width: 282px;
+			ul{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				li{
+					span{
+						display:block;
+						text-align:center;
+						font-family: "Open Sans";
+						  font-size: 16px;
+						  font-style: normal;
+						  font-stretch: normal;
+						  font-weight: 400;
+						  line-height: 24px;
+					}
+					.amount{
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		.profile__modal{
+			width:187px;
+			height:124px;
+			background-color: #fff;
+			border-radius: 10px;
+			position: absolute;
+			top: 35px;
+			right:-140px;
+			z-index: 2;
+			ul{
+				display: block;
+				padding: 25px 0;
+				li{
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					height:38px;
+					img{
+						margin-right:5px;
+					}
+				}
+				li:hover{
+					background-color: #f7f9fc;
+				}
+			}
+		}
+	}
+	.news{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.news__block{
+			width: 374px;
+			height: 280px;
+			background-color: #fff;
+			border-radius: 10px;
+			margin-right:25px;
+			margin-bottom: 25px;
+			position: relative;
+			z-index: 1;
+			.news__block__title{
+				font-family: "Open Sans";
+				  font-size: 32px;
+				  font-style: normal;
+				  font-stretch: normal;
+				  font-weight: 400;
+				  line-height: 32px;
+				  margin-top: 60px;
+				  padding: 0 20px;
+			}
+			.bottom{
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+				display: flex;
+				span{
+					width: 24px;
+					height: 24px;
+					background-color: grey;
+					border-radius: 50%;
+					display: inline-block;
+					margin-right: 10px;
+				}
+				p{
+					font-family: "Open Sans";
+					  font-size: 14px;
+					  font-style: normal;
+					  font-stretch: normal;
+					  font-weight: 400;
+					  line-height: 19px;
+					  display: inline-block;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 860px) {
+	.main{
+		flex-wrap: wrap;
+	}
+}
